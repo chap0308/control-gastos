@@ -1,11 +1,11 @@
 pipeline {
     agent any
 
-    environment {
-        // Puedes definir variables de entorno aquí según sea necesario
-        NODEJS_HOME = 'C:\\Program Files\\nodejs' // Ejemplo de la ruta de Node.js en Windows
-        PATH = "${env.PATH};${NODEJS_HOME}"
-    }
+    // environment {
+    //     // Puedes definir variables de entorno aquí según sea necesario
+    //     NODEJS_HOME = 'C:\\Program Files\\nodejs' // Ejemplo de la ruta de Node.js en Windows
+    //     PATH = "${env.PATH};${NODEJS_HOME}"
+    // }
 
     stages {
         stage('Checkout') {
